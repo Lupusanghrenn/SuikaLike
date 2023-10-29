@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7d48cda129c94449f35432763acfd9, type: 3}
+  m_Name: FruitDatabase
+  m_EditorClassIdentifier: 
+  fruitDatabase:
+  - idName: Cherry
+    score: 2
+    gameObject: {fileID: 3242395276741214989, guid: 57b6ccc207beff3408d788dd89b3a7f9, type: 3}
+  - idName: Strawberry
+    score: 4
+    gameObject: {fileID: 6099618283691382628, guid: 03a45a72c899d214b8346eabf5e8443f, type: 3}
+  - idName: Grapes
+    score: 6
+    gameObject: {fileID: 1822246907338866111, guid: bdd90be96e2bf6e4b9dd41552ad209dd, type: 3}
+  fruitID:
+  - Cherry
+  - Strawberry
+  - Grapes
