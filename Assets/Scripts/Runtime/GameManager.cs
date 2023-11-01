@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
             FruitData nextFruit = FruitDatabase.GetNextFruit(fruit1.FruitID);
             if(nextFruit != null)
             {
-                SpawnFruit(nextFruit, _fruit1.transform);
+                SpawnFruit(nextFruit, _fruit1.transform.position, Quaternion.identity);
             }
             Destroy(_fruit1);
             Destroy(_fruit2);
@@ -36,9 +36,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void SpawnFruit(FruitData _fruitData, Transform _transform)
+    public void PlayerRequestedFruit(Vector3 _position)
     {
-        GameObject.Instantiate(_fruitData.gameObject, _transform.position, _transform.rotation);
+        SpawnFruit(FruitDatabase.fruitDatabase[0], _position, Quaternion.identity);
+    }
+
+    private void SpawnFruit(FruitData _fruitData, Vector3 _position, Quaternion _rotation)
+    {
+        GameObject.Instantiate(_fruitData.gameObject, _position, _rotation);
     }
 
     private void ComputeScore(string _fruitID)
