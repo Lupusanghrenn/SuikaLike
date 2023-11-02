@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         GameObject.Instantiate(_fruitData.gameObject, _position, _rotation);
     }
 
-    private void ComputeScore(string _fruitID)
+    private void ComputeScore(FruitID _fruitID)
     {
         score += FruitDatabase.GetFruitScore(_fruitID);
     }

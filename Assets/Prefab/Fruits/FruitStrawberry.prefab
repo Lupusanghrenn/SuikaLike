@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: FruitID
       value: Strawberry
       objectReference: {fileID: 0}
+    - target: {fileID: 2211423844283598386, guid: 7d558927332f4014a8a9705c8d530df3, type: 3}
+      propertyPath: FruitID.ID
+      value: Strawberry
+      objectReference: {fileID: 0}
     - target: {fileID: 2212761828161465575, guid: 7d558927332f4014a8a9705c8d530df3, type: 3}
       propertyPath: m_Name
       value: FruitStrawberry

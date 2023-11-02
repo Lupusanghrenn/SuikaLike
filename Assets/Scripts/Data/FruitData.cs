@@ -7,7 +7,7 @@ using UnityEngine;
 public class FruitData
 {
     [SerializeField]
-    public string idName = string.Empty;
+    public FruitID idName;
 
     public int score = 0;
     public GameObject gameObject = null;

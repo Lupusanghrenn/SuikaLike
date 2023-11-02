@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FruitBehavior : MonoBehaviour
 {
-    public string FruitID;
+    public FruitID FruitID;
 
     public bool enableCol = true;
 
@@ -14,6 +14,7 @@ public class FruitBehavior : MonoBehaviour
         if (!enableCol)
             return;
 
+        //TODO Improve this hack, make ManagerOwner
         Debug.Log("OnCollisionEnter2D");
         if (col.gameObject.CompareTag("Fruit"))
         {

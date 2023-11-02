@@ -8,9 +8,8 @@ public class FruitDatabase : ScriptableObject
 {
     [SerializeField]
     public List<FruitData> fruitDatabase;
-    public List<string> fruitID;
 
-    public int GetFruitScore(string _fruitID)
+    public int GetFruitScore(FruitID _fruitID)
     {
         int index = GetFruitIndex(_fruitID);
         if (index < 0)
@@ -18,7 +17,7 @@ public class FruitDatabase : ScriptableObject
         return fruitDatabase[index].score;
     }
 
-    public FruitData GetNextFruit(string _fruitID)
+    public FruitData GetNextFruit(FruitID _fruitID)
     {
         int index = GetFruitIndex(_fruitID);
         if (index < 0 || index+1 >= fruitDatabase.Count)
@@ -26,7 +25,7 @@ public class FruitDatabase : ScriptableObject
         return fruitDatabase[index + 1];
     }
 
-    private int GetFruitIndex(string _fruitID)
+    private int GetFruitIndex(FruitID _fruitID)
     {
         for(int i = 0; i < fruitDatabase.Count; i++)
         {
